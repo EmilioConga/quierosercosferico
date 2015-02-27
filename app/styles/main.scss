@@ -1,20 +1,23 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "_variables.scss";
 // endbower
+
+@import "variables.scss";
+
 
 /*.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+} */
+html {
+  font-family: $font-family-base;
 }
-
 /* Space out content a bit */
 body {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  
 }
 
 
@@ -23,41 +26,68 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  margin-top: 100px;
+  padding-top: 20px;
+  margin-right: 100px;
+
+}
 
 .img-responsive {
-  width: 78%;
+  width: 400px;
+  height: 180px;
 }
 
 .col-md-6 {
-  margin: auto;
-  height: 100%;
+  margin-bottom: 40px;
 
 }
 
+.row {
+
+}
+
+.row-text {
+  text-align: center;
+  color: white;
+  font-size: 12px ;
+  font-family: 'Raleway';
+  padding: 30px 30px 30px 30px;
+}
+
+.row-blue {
+  background-color: $brand-success; 
+  height: 220px;
+}
+
+ .row-red {
+  background-color: $brand-danger; 
+  height: 220px;
+
+}                     
+              
+.row-green {
+  background-color: $brand-info; 
+  height: 220px;
+}
   /* Make the masthead heading the same height as the navigation */
  h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 100px;
-    text-align: center;
+    font-size: 84px;
     margin: 0;
+    margin-left: 90px;
+  }
 
-    
-  }
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-    text-align: center;
-  }
+  h4 {
+    font-family: 'Raleway';
+    margin-left: 94px;
+    margin-top: 14px;
 }
+
 
 /* Custom page footer */
 .footer {
@@ -98,13 +128,13 @@ body {
   .header,
   .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+
   }
 
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
+
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
