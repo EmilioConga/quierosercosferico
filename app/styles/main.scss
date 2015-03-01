@@ -17,24 +17,40 @@ body {
    
   }
 
+.row__header {
+  margin: 0 20px 0 20px;
+}
+
 .main__txt {
   font-family: 'Oswald', sans-serif;
-  font-size: 80px;
-  padding: 50px 0 20px 20px;
+  font-size: 75px;
+  padding: 60px 20px 0 20px;
+  text-align: left;
 
+   
+    h4 {
+      font-size: 17px;
+      font-family: 'Raleway';
+      margin-bottom: 40px;
+    }
+}
+
+.main__txt__content {
+  
+  
+  h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+  h6 {
+    margin: 15px 18px 25px 18px;
+    text-align: center;
   }
 
- .main__txt > span {
-    font-family: 'Raleway';
-    font-size: 12px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-
-}
 
 /* Custom page header */
 
@@ -50,12 +66,17 @@ body {
   color: white;
   font-size: 12px ;
   font-family: 'Raleway';
-  padding: 30px 30px 30px 30px;
+  padding: 20px 30px 20px 30px;
 
   h6 {
     font-weight: bold;
   }
+
+  p {
+    margin: auto auto 15px;
+  }  
 }
+
 
 .row-blue {
   background-color: $brand-success; 
@@ -66,6 +87,10 @@ body {
   background-color: $brand-danger; 
   height: 220px;
 
+    .col-xs-12 {
+      padding: 8px 12px;
+    }
+
 }                     
               
 .row-green {
@@ -74,29 +99,30 @@ body {
 }
 
 
-
-
 .btn__row__article {
   -webkit-border-radius: 2;
   -moz-border-radius: 2;
-  border-radius: 2px;
+  border-radius: 0;
   font-family: 'Raleway';
   font-weight: 600;
   color: #ffffff;
   font-size: 12px;
   background: transparent;
-  padding: 5px 40px 5px 40px;
+  padding: 8px 25px;
   border: solid #fafafa 1px;
-  margin: 10px 50px 20px 50px;
-
-
+  width: initial;
+  margin: auto 50px;
 }
 
 .btn__row__article:hover {
-  background: $brand-primary;
+outline: 30px auto #f0f0f0
 }
 
-  /* Make the masthead heading the same height as the navigation */
+.row-blue {
+  .btn__row__article {
+    vertical-align: center;
+}
+}
 
 
 /* Custom page footer */
@@ -114,28 +140,85 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
-.container-fluid {
-  padding: 0;   
-}
+  .container-fluid {
+    padding-bottom: 20px;
+    padding-top: 10px;   
+  }
 
-.main__header {
-  margin: 160px 100px 0 100px;
-}
+  .main__header {
+    margin: 130px 150px 0 150px
+  }
 
-.main__txt {
-  font-size: 120px;
-}
 
- h4 {
-  font-size: 27px;
-  font-weight: 300;
-}
+  .main__txt {
+    font-size: 100px;
+    text-align: left;
 
-.img-responsive {
- width: 500px;
- height: 300px;
- padding: 50px 0 0;
-}
 
-}
+    h4 {
+      font-size: 23px;
+      font-weight: 300;
+    }
+  }
 
+  .main__header__img{
+    .img-responsive {
+     width: 500px;
+     height: 270px;
+     padding: 50px 0 0;
+    }
+  }
+
+  .blue {
+    margin-left: 35%;
+  }
+
+  .green {
+    margin-right: 35%;
+  }
+
+  .btn__row__article {
+    margin-bottom: 30px;
+  }
+
+  .row-blue {
+    width: 36%;
+  }
+
+  .row-red {
+    width: 28%;
+
+    p {
+      margin-bottom: 32px;
+    }
+  }
+  .row-green {
+    width: 36%;
+
+    p {
+      margin-bottom: 23px;
+    }
+  }
+
+
+
+  .main__img__content {
+    float: left;
+    }
+
+    .main__txt__content {
+      width: 25%;
+      float:right;
+      
+      h2 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      h6 {
+        margin: 15px 18px 25px 18px;
+        text-align: left;
+      }
+    }
+}
